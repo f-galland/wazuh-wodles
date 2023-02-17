@@ -1,13 +1,29 @@
 #!/var/ossec/framework/python/bin/python3
-######## vuln_report.py ###########
-# Author: Juan C. Tello
-# Version: 2022.10.25
+
+
+######## vuln_report.py #######
+# 
+# This is based on original work from Juan C. Tello
 # Description:
 #  This wodle (Wazuh module) gives Wazuh the capability to query the manager's
 #  API to gather information on the current status of all agents regarding the
-#  Security Configuration Assessment (SCA) module. 
+#  Vulnerability Detection module. 
 #
 # Configuration:
+#
+#
+#    <wodle name="command">
+#      <disabled>no</disabled>
+#      <tag>test</tag>
+#      <command>/var/ossec/framework/python/bin/python3 /var/ossec/wodles/vuln_report.py --user WAZUH_API_USER --password WAZUH_API_PASSWORD --sender FROM_ADDRESS --destination TO_ADDRESS -smtpserver localhost</command>
+#      <interval>1d</interval>
+#      <ignore_output>yes</ignore_output>
+#      <run_on_start>yes</run_on_start>
+#      <timeout>0</timeout>
+#      <!--
+#      <verify_sha256></verify_sha256>
+#      -->
+#    </wodle>
 #
 #
 ###############################
@@ -26,7 +42,7 @@ reportFilename='/tmp/{}-vulnerabilities-report.csv'.format(DATE)
 def get_token():
     """
     Function to retrieve the Wazuh JWST token for the API
-    This was built for Wazuh 4.3.9. For Wazuh 4.4.0 this is expected to change
+    This was built for Wazuh 4.3.10. For Wazuh 4.4.0 this is expected to change
         to a POST request: https://github.com/wazuh/wazuh/issues/12793
     """
     request_result = requests.get(WAZUH_API + "/security/user/authenticate", auth=(WAZUH_USER, WAZUH_PASS), verify=VERIFY)
