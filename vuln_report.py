@@ -12,6 +12,11 @@
 # Configuration:
 #
 #
+#    You will need an SMTP relay server with your authentication credentials set up.
+#    A guide on how to set that up can be found on:
+#    https://documentation.wazuh.com/current/user-manual/manager/manual-email-report/smtp-authentication.html
+#
+#
 #    <wodle name="command">
 #      <disabled>no</disabled>
 #      <tag>test</tag>
