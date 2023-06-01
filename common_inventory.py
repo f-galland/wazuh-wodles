@@ -7,6 +7,8 @@
 # Description:
 #  This wodle (Wazuh module) gives Wazuh the capability to query the manager's
 #  API to gather information on the inventory information from all agents.
+#  It is accompannied by the common_inventory.xml rule file which goes to
+#  /var/ossec/etc/rules/
 #
 # Configuration:
 #
