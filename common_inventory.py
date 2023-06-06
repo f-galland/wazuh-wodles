@@ -112,7 +112,7 @@ def get_inventory(agents):
         #inventory[ID]['netproto'] = get_pages(WAZUH_API + "/syscollector/" + ID + "/netproto")
         #inventory[ID]['packages'] = get_pages(WAZUH_API + "/syscollector/" + ID + "/packages")
         #inventory[ID]['ports'] = get_pages(WAZUH_API + "/syscollector/" + ID + "/ports")
-        #inventory[ID]['processes'] = get_pages(WAZUH_API + "/syscollector/" + ID + "/processes")
+        #inventory[ID]['processes'] = get_pages(WAZUH_API + "/syscollector/" + ID + "/processes")[0]
         
         inventory[ID]['hardware'] = get_non_paged(WAZUH_API + "/syscollector/" + ID + "/hardware")[0]
         inventory[ID]['os'] = get_non_paged(WAZUH_API + "/syscollector/" + ID + "/os")[0]
@@ -150,5 +150,4 @@ if __name__ == "__main__":
     for a in agents:
         ID=a['id']
         NAME=a['name']
-        print(inventory[ID])
         send_event(json.dumps(inventory[ID]),ID,NAME)
