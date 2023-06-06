@@ -29,8 +29,18 @@
 #
 ###############################
 
+import logging
+
+logging.basicConfig(format='%(asctime)s %(message)s',filename='common_inventory.log', encoding='utf-8', level=logging.DEBUG)
+
+logging.info('Started common_inventory.py')
+
+logging.info('Loading libraries')
+
 import requests, urllib3, json, argparse
 from socket import socket, AF_UNIX, SOCK_DGRAM
+
+logging.info('Libraries loaded')
 
 
 requests.packages.urllib3.disable_warnings()
@@ -131,6 +141,9 @@ def send_event(msg,agentId,agentName):
 if __name__ == "__main__":
 
     # Parsing arguments
+    
+    logging.info('Reading Arguments')
+
     parser = argparse.ArgumentParser()
     parser.add_argument('-m', '--manager', type=str, default='127.0.0.1', help='*Wazuh API IP or DNS name.(def. "127.0.0.1").')
     parser.add_argument('-u', '--user', type=str, default='wazuh-wui', help='*Wazuh API user (def. "wazuh-wui").')
@@ -143,9 +156,15 @@ if __name__ == "__main__":
     WAZUH_PORT = 55000
     WAZUH_API=f"https://{WAZUH_IP}:{WAZUH_PORT}"
     
+    logging.info('Getting agents (paged)')
+
     agents = get_pages(WAZUH_API + f"/agents")
     
+    logging.info('Getting inventory for agents')
+    
     inventory = get_inventory(agents)
+    
+    logging.info('Pushing data to Wazuh Socket')
 
     for a in agents:
         ID=a['id']
