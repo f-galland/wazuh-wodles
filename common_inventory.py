@@ -44,7 +44,7 @@ def get_token():
     This was built for Wazuh 4.3.10. For Wazuh 4.4.0 this is expected to change
         to a POST request: https://github.com/wazuh/wazuh/issues/12793
     """
-    request_result = requests.get(WAZUH_API + "/security/user/authenticate", auth=(WAZUH_USER, WAZUH_PASS), verify=VERIFY)
+    request_result = requests.get(WAZUH_API + "/security/user/authenticate", auth=(WAZUH_USER, WAZUH_PASS), verify=VERIFY,timeout=5)
     if request_result.status_code == 200:
        token = json.loads(request_result.content.decode())['data']['token']
        HEADERS['Authorization'] = f'Bearer {token}'
@@ -59,7 +59,7 @@ def get_pages(URL,limit=500):
     offset = 0
     finished = False
     while not finished:
-        request = requests.get(URL + f"?limit={limit}&offset={offset}", headers=HEADERS, verify=VERIFY)
+        request = requests.get(URL + f"?limit={limit}&offset={offset}", headers=HEADERS, verify=VERIFY,timeout=5)
         if request.status_code == 200:
             items = json.loads(request.content.decode())['data']
             for i in items['affected_items']:
@@ -83,7 +83,7 @@ def get_non_paged(URL):
     Function to get navigate all pages of a result in the Wazuh API
     """
     result = []
-    request = requests.get(URL, headers=HEADERS, verify=VERIFY)
+    request = requests.get(URL, headers=HEADERS, verify=VERIFY,timeout=5)
     if request.status_code == 200:
         items = json.loads(request.content.decode())['data']
         for i in items['affected_items']:
