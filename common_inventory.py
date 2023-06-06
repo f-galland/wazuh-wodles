@@ -16,7 +16,7 @@
 #    <wodle name="command">
 #      <disabled>no</disabled>
 #      <tag>test</tag>
-#      <command>/var/ossec/framework/python/bin/python3 /var/ossec/wodles/vuln_report.py --manager WAZUH_MANAGER_IP_ADDRESS --user WAZUH_API_USER --password WAZUH_API_PASSWORD</command>
+#      <command>/var/ossec/framework/python/bin/python3 /var/ossec/wodles/common_inventory.py --manager WAZUH_MANAGER_IP_ADDRESS --user WAZUH_API_USER --password WAZUH_API_PASSWORD</command>
 #      <interval>1d</interval>
 #      <ignore_output>yes</ignore_output>
 #      <run_on_start>yes</run_on_start>
