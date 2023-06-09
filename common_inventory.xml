@@ -2,6 +2,6 @@
   <rule id="100600" level="3">
     <decoded_as>json</decoded_as>
     <description>$(os.hostname) inventory data</description>
-
+    <location>inventory</location>
   </rule>
 </group>
