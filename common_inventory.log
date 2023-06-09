@@ -1,0 +1,171 @@
+2023-06-06 17:59:41,033 Started common_inventory.py
+2023-06-06 17:59:41,033 Loading libraries
+2023-06-06 17:59:41,101 Libraries loaded
+2023-06-06 17:59:41,101 Reading Arguments
+2023-06-06 17:59:41,102 Getting agents (paged)
+2023-06-06 17:59:41,104 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,108 https://127.0.0.1:55000 "GET /agents?limit=500&offset=0 HTTP/1.1" 401 71
+2023-06-06 17:59:41,109 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,402 https://127.0.0.1:55000 "GET /security/user/authenticate HTTP/1.1" 200 432
+2023-06-06 17:59:41,404 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,432 https://127.0.0.1:55000 "GET /agents?limit=500&offset=0 HTTP/1.1" 200 5610
+2023-06-06 17:59:41,432 Getting inventory for agents
+2023-06-06 17:59:41,433 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,443 https://127.0.0.1:55000 "GET /syscollector/000/hardware HTTP/1.1" 200 420
+2023-06-06 17:59:41,445 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,456 https://127.0.0.1:55000 "GET /syscollector/000/os HTTP/1.1" 200 556
+2023-06-06 17:59:41,457 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,467 https://127.0.0.1:55000 "GET /syscollector/001/hardware HTTP/1.1" 200 420
+2023-06-06 17:59:41,469 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,480 https://127.0.0.1:55000 "GET /syscollector/001/os HTTP/1.1" 200 554
+2023-06-06 17:59:41,481 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,492 https://127.0.0.1:55000 "GET /syscollector/003/hardware HTTP/1.1" 200 389
+2023-06-06 17:59:41,493 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,505 https://127.0.0.1:55000 "GET /syscollector/003/os HTTP/1.1" 200 610
+2023-06-06 17:59:41,506 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,516 https://127.0.0.1:55000 "GET /syscollector/005/hardware HTTP/1.1" 200 420
+2023-06-06 17:59:41,517 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,529 https://127.0.0.1:55000 "GET /syscollector/005/os HTTP/1.1" 200 555
+2023-06-06 17:59:41,530 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,541 https://127.0.0.1:55000 "GET /syscollector/007/hardware HTTP/1.1" 200 428
+2023-06-06 17:59:41,542 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,554 https://127.0.0.1:55000 "GET /syscollector/007/os HTTP/1.1" 200 534
+2023-06-06 17:59:41,555 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,571 https://127.0.0.1:55000 "GET /syscollector/009/hardware HTTP/1.1" 200 428
+2023-06-06 17:59:41,572 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,585 https://127.0.0.1:55000 "GET /syscollector/009/os HTTP/1.1" 200 482
+2023-06-06 17:59:41,586 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,599 https://127.0.0.1:55000 "GET /syscollector/010/hardware HTTP/1.1" 200 438
+2023-06-06 17:59:41,600 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,621 https://127.0.0.1:55000 "GET /syscollector/010/os HTTP/1.1" 200 486
+2023-06-06 17:59:41,622 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,633 https://127.0.0.1:55000 "GET /syscollector/011/hardware HTTP/1.1" 200 433
+2023-06-06 17:59:41,634 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 17:59:41,646 https://127.0.0.1:55000 "GET /syscollector/011/os HTTP/1.1" 200 570
+2023-06-06 17:59:41,646 Pushing data to Wazuh Socket
+2023-06-06 18:06:10,054 Started common_inventory.py
+2023-06-06 18:06:10,054 Loading libraries
+2023-06-06 18:06:10,118 Libraries loaded
+2023-06-06 18:06:10,118 Reading Arguments
+2023-06-06 18:06:10,119 Getting agents (paged)
+2023-06-06 18:06:10,121 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,129 https://127.0.0.1:55000 "GET /agents?limit=500&offset=0 HTTP/1.1" 401 71
+2023-06-06 18:06:10,131 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,426 https://127.0.0.1:55000 "GET /security/user/authenticate HTTP/1.1" 200 432
+2023-06-06 18:06:10,427 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,456 https://127.0.0.1:55000 "GET /agents?limit=500&offset=0 HTTP/1.1" 200 5610
+2023-06-06 18:06:10,456 Getting inventory for agents
+2023-06-06 18:06:10,457 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,468 https://127.0.0.1:55000 "GET /syscollector/000/hardware HTTP/1.1" 200 420
+2023-06-06 18:06:10,469 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,480 https://127.0.0.1:55000 "GET /syscollector/000/os HTTP/1.1" 200 556
+2023-06-06 18:06:10,481 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,491 https://127.0.0.1:55000 "GET /syscollector/001/hardware HTTP/1.1" 200 420
+2023-06-06 18:06:10,492 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,504 https://127.0.0.1:55000 "GET /syscollector/001/os HTTP/1.1" 200 554
+2023-06-06 18:06:10,506 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,516 https://127.0.0.1:55000 "GET /syscollector/003/hardware HTTP/1.1" 200 389
+2023-06-06 18:06:10,517 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,529 https://127.0.0.1:55000 "GET /syscollector/003/os HTTP/1.1" 200 610
+2023-06-06 18:06:10,530 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,540 https://127.0.0.1:55000 "GET /syscollector/005/hardware HTTP/1.1" 200 420
+2023-06-06 18:06:10,542 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,553 https://127.0.0.1:55000 "GET /syscollector/005/os HTTP/1.1" 200 555
+2023-06-06 18:06:10,555 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,565 https://127.0.0.1:55000 "GET /syscollector/007/hardware HTTP/1.1" 200 428
+2023-06-06 18:06:10,566 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,582 https://127.0.0.1:55000 "GET /syscollector/007/os HTTP/1.1" 200 534
+2023-06-06 18:06:10,584 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,599 https://127.0.0.1:55000 "GET /syscollector/009/hardware HTTP/1.1" 200 428
+2023-06-06 18:06:10,600 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,619 https://127.0.0.1:55000 "GET /syscollector/009/os HTTP/1.1" 200 482
+2023-06-06 18:06:10,620 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,631 https://127.0.0.1:55000 "GET /syscollector/010/hardware HTTP/1.1" 200 438
+2023-06-06 18:06:10,632 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,646 https://127.0.0.1:55000 "GET /syscollector/010/os HTTP/1.1" 200 486
+2023-06-06 18:06:10,648 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,661 https://127.0.0.1:55000 "GET /syscollector/011/hardware HTTP/1.1" 200 433
+2023-06-06 18:06:10,662 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:10,674 https://127.0.0.1:55000 "GET /syscollector/011/os HTTP/1.1" 200 570
+2023-06-06 18:06:10,675 Pushing data to Wazuh Socket
+2023-06-06 18:06:28,598 Started common_inventory.py
+2023-06-06 18:06:28,598 Loading libraries
+2023-06-06 18:06:28,667 Libraries loaded
+2023-06-06 18:06:28,667 Reading Arguments
+2023-06-06 18:06:28,667 Getting agents (paged)
+2023-06-06 18:06:28,670 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:28,674 https://127.0.0.1:55000 "GET /agents?limit=500&offset=0 HTTP/1.1" 401 71
+2023-06-06 18:06:28,675 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:28,888 https://127.0.0.1:55000 "GET /security/user/authenticate HTTP/1.1" 401 59
+2023-06-06 18:06:35,779 Started common_inventory.py
+2023-06-06 18:06:35,779 Loading libraries
+2023-06-06 18:06:35,843 Libraries loaded
+2023-06-06 18:06:35,843 Reading Arguments
+2023-06-06 18:06:35,845 Getting agents (paged)
+2023-06-06 18:06:35,848 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:35,854 https://127.0.0.1:55000 "GET /agents?limit=500&offset=0 HTTP/1.1" 401 71
+2023-06-06 18:06:35,856 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:36,068 https://127.0.0.1:55000 "GET /security/user/authenticate HTTP/1.1" 401 59
+2023-06-06 18:06:40,960 Started common_inventory.py
+2023-06-06 18:06:40,960 Loading libraries
+2023-06-06 18:06:41,026 Libraries loaded
+2023-06-06 18:06:41,026 Reading Arguments
+2023-06-06 18:06:41,027 Getting agents (paged)
+2023-06-06 18:06:41,029 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:41,033 https://127.0.0.1:55000 "GET /agents?limit=500&offset=0 HTTP/1.1" 401 71
+2023-06-06 18:06:41,034 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:41,246 https://127.0.0.1:55000 "GET /security/user/authenticate HTTP/1.1" 401 59
+2023-06-06 18:06:44,627 Started common_inventory.py
+2023-06-06 18:06:44,627 Loading libraries
+2023-06-06 18:06:44,689 Libraries loaded
+2023-06-06 18:06:44,689 Reading Arguments
+2023-06-06 18:06:44,690 Getting agents (paged)
+2023-06-06 18:06:44,693 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:44,699 https://127.0.0.1:55000 "GET /agents?limit=500&offset=0 HTTP/1.1" 401 71
+2023-06-06 18:06:44,701 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:44,910 https://127.0.0.1:55000 "GET /security/user/authenticate HTTP/1.1" 401 59
+2023-06-06 18:06:46,542 Started common_inventory.py
+2023-06-06 18:06:46,542 Loading libraries
+2023-06-06 18:06:46,606 Libraries loaded
+2023-06-06 18:06:46,606 Reading Arguments
+2023-06-06 18:06:46,607 Getting agents (paged)
+2023-06-06 18:06:46,611 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:46,617 https://127.0.0.1:55000 "GET /agents?limit=500&offset=0 HTTP/1.1" 401 71
+2023-06-06 18:06:46,618 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:46,908 https://127.0.0.1:55000 "GET /security/user/authenticate HTTP/1.1" 200 432
+2023-06-06 18:06:46,909 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:46,940 https://127.0.0.1:55000 "GET /agents?limit=500&offset=0 HTTP/1.1" 200 5610
+2023-06-06 18:06:46,941 Getting inventory for agents
+2023-06-06 18:06:46,942 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:46,953 https://127.0.0.1:55000 "GET /syscollector/000/hardware HTTP/1.1" 200 420
+2023-06-06 18:06:46,954 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:46,966 https://127.0.0.1:55000 "GET /syscollector/000/os HTTP/1.1" 200 556
+2023-06-06 18:06:46,967 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:46,977 https://127.0.0.1:55000 "GET /syscollector/001/hardware HTTP/1.1" 200 420
+2023-06-06 18:06:46,979 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:46,991 https://127.0.0.1:55000 "GET /syscollector/001/os HTTP/1.1" 200 554
+2023-06-06 18:06:46,992 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:47,003 https://127.0.0.1:55000 "GET /syscollector/003/hardware HTTP/1.1" 200 389
+2023-06-06 18:06:47,004 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:47,015 https://127.0.0.1:55000 "GET /syscollector/003/os HTTP/1.1" 200 610
+2023-06-06 18:06:47,017 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:47,027 https://127.0.0.1:55000 "GET /syscollector/005/hardware HTTP/1.1" 200 420
+2023-06-06 18:06:47,028 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:47,040 https://127.0.0.1:55000 "GET /syscollector/005/os HTTP/1.1" 200 555
+2023-06-06 18:06:47,041 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:47,052 https://127.0.0.1:55000 "GET /syscollector/007/hardware HTTP/1.1" 200 428
+2023-06-06 18:06:47,053 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:47,065 https://127.0.0.1:55000 "GET /syscollector/007/os HTTP/1.1" 200 534
+2023-06-06 18:06:47,066 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:47,078 https://127.0.0.1:55000 "GET /syscollector/009/hardware HTTP/1.1" 200 428
+2023-06-06 18:06:47,080 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:47,094 https://127.0.0.1:55000 "GET /syscollector/009/os HTTP/1.1" 200 482
+2023-06-06 18:06:47,095 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:47,107 https://127.0.0.1:55000 "GET /syscollector/010/hardware HTTP/1.1" 200 438
+2023-06-06 18:06:47,109 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:47,122 https://127.0.0.1:55000 "GET /syscollector/010/os HTTP/1.1" 200 486
+2023-06-06 18:06:47,125 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:47,137 https://127.0.0.1:55000 "GET /syscollector/011/hardware HTTP/1.1" 200 433
+2023-06-06 18:06:47,138 Starting new HTTPS connection (1): 127.0.0.1:55000
+2023-06-06 18:06:47,150 https://127.0.0.1:55000 "GET /syscollector/011/os HTTP/1.1" 200 570
+2023-06-06 18:06:47,151 Pushing data to Wazuh Socket

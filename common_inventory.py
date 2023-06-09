@@ -1,7 +1,7 @@
 #!/var/ossec/framework/python/bin/python3
 
 
-######## vuln_report.py #######
+######## common_inventory.py #######
 # 
 # This is based on original work from Juan C. Tello
 # Description:
@@ -90,20 +90,19 @@ def get_pages(URL,limit=500):
 
 def get_non_paged(URL):
     """
-    Function to get navigate all pages of a result in the Wazuh API
+    Function to get single paged results off the Wazuh API
     """
     result = []
     request = requests.get(URL, headers=HEADERS, verify=VERIFY,timeout=5)
     if request.status_code == 200:
-        items = json.loads(request.content.decode())['data']
-        for i in items['affected_items']:
-            result.append(i)
+        result = json.loads(request.content.decode())['data']['affected_items']
     else:
         if request.status_code == 401:
             get_token() # Renew token
         else:
             raise Exception(f"Error obtaining response: {request.json()}")
-    return result
+    if len(result) > 0:
+        return result[0]
 
 def get_inventory(agents):
     """
@@ -124,8 +123,8 @@ def get_inventory(agents):
         #inventory[ID]['ports'] = get_pages(WAZUH_API + "/syscollector/" + ID + "/ports")
         #inventory[ID]['processes'] = get_pages(WAZUH_API + "/syscollector/" + ID + "/processes")[0]
         
-        inventory[ID]['hardware'] = get_non_paged(WAZUH_API + "/syscollector/" + ID + "/hardware")[0]
-        inventory[ID]['os'] = get_non_paged(WAZUH_API + "/syscollector/" + ID + "/os")[0]
+        inventory[ID]['hardware'] = get_non_paged(WAZUH_API + "/syscollector/" + ID + "/hardware")
+        inventory[ID]['os'] = get_non_paged(WAZUH_API + "/syscollector/" + ID + "/os")
 
     return inventory
 
